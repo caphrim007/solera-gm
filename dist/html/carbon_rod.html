@@ -1,0 +1,184 @@
+<div class='solera-bar'>
+	<div id='carbonRod' class='solera'>
+		<div id='solera-menu'>
+			<div id='timespanButton' class='timespan trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Timespan</span>
+			</div>
+			<div id='sourceAddressButton' class='source-address trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Source Address</span>
+			</div>
+			<div id='sourcePortButton' class='source-port trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Source Port</span>
+			</div>
+			<div id='destinationAddressButton' class='destination-address trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Destination Address</span>
+			</div>
+			<div id='destinationPortButton' class='destination-port trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Destination Port</span>
+			</div>
+			<div id='protocolButton' class='protocol trigger'>
+				<span style='float: left;' class='activeText heavyHypertext'>Protocol</span>
+			</div>
+			<div id='soleraButton' class='menuItem appIcon trigger'>
+				<img src='images/inspect.png'>
+			</div>
+		</div>
+	</div>
+
+	<img id='soleraHeightImage' src='images/maximize.png' class='minimize'>
+
+	<div id='soleraRodPlaceholder'>&nbsp;</div>
+
+	<div id='solera-submenu'>
+		<div id='timespanBlock' class='positionable timespan submenu'>
+			<table style='width: 100%;'>
+				<tr>
+					<td class='timespanDesc'>
+						Start Time: &nbsp;&nbsp;&nbsp;
+					</td>
+					<td style='width: 75%;'>
+						<table style='width: 270px;'>
+							<tr class='soleraTimeRange'>
+								<td>
+									<input type="text" style="width: 20px;" name="stt_month" id="start_month" value=''>&nbsp;
+									<input type="text" style="width: 20px;" name="stt_day" id="start_day" value=''>&nbsp;
+									<input type="text" style="width: 40px;" name="stt_year" id="start_year" value=''>
+								</td>
+								<td>
+									<input type="text" style="width: 20px;" name="stt_hour" id="start_hour" value=''>&nbsp;
+									<input type="text" style="width: 20px;" name="stt_minute" id="start_minute" value=''>&nbsp;
+									<input type="text" style="width: 20px;" name="stt_second" id="start_second" value=''>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class='timespanDesc'>
+						Stop Time: &nbsp;&nbsp;&nbsp;
+					</td>
+					<td style='width: 75%;'>
+						<table style='width: 270px;'>
+							<tr class='soleraTimeRange'>
+								<td>
+									<input type="text" style="width: 20px;" name="stp_month" id="stop_month" value="">&nbsp;
+									<input type="text" style="width: 20px;" name="stp_day" id="stop_day" value="">&nbsp;
+									<input type="text" style="width: 40px;" name="stp_year" id="stop_year" value="">
+								</td>
+								<td>
+									<input type="text" style="width: 20px;" name="stp_hour" id="stop_hour" value="">&nbsp;
+									<input type="text" style="width: 20px;" name="stp_minute" id="stop_minute" value="">&nbsp;
+									<input type="text" style="width: 20px;" name="stp_second" id="stop_second" value="">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id='sourceAddressBlock' class='positionable source-address submenu'>
+			<div class='content' style='color: #999; padding: 10px; max-height: 200px; overflow: auto'>
+				Your source address list is empty
+			</div>
+			<br>
+			<div style='width: 100%;'>
+				<form name='sourceAddress'>
+					<input type='text' name='sourceAddress'>
+					<input type='button' name='add' value='Add'/>
+				</form>
+			</div>
+		</div>
+
+		<div id='sourcePortBlock' class='positionable source-port submenu'>
+			<div class='content' style='color: #999; padding: 10px; max-height: 200px; overflow: auto'>
+				Your source port list is empty
+			</div>
+			<br>
+			<div style='width: 100%;'>
+				<form name='sourcePort'>
+					<input type='text' name='sourcePort'>
+					<input type='button' name='add' value='Add'/>
+				</form>
+			</div>
+		</div>
+
+		<div id='destinationAddressBlock' class='positionable destination-address submenu'>
+			<div class='content' style='color: #999; padding: 10px; max-height: 200px; overflow: auto'>
+				Your destination address list is empty
+			</div>
+			<br>
+			<div style='width: 100%;'>
+				<form name='destinationAddress'>
+					<input type='text' name='destinationAddress'>
+					<input type='button' name='add' value='Add'/>
+				</form>
+			</div>
+		</div>
+
+		<div id='destinationPortBlock' class='positionable destination-port submenu'>
+			<div class='content' style='color: #999; padding: 10px; max-height: 200px; overflow: auto'>
+				Your destination port list is empty
+			</div>
+			<br>
+			<div style='width: 100%;'>
+				<form name='destinationPort'>
+					<input type='text' name='destinationPort'>
+					<input type='button' name='add' value='Add'/>
+				</form>
+			</div>
+		</div>
+
+		<div id='protocolBlock' class='positionable protocol submenu'>
+			<div class='content' style='color: #999; padding: 10px;'>
+				<input type='radio' name='protocol' value='tcp' checked='checked'>TCP
+				<br><br>
+				<input type='radio' name='protocol' value='udp'>UDP
+			</div>
+		</div>
+
+		<div id='soleraBlock' class='positionable solera submenu'>
+			<div style='text-align: center;'>
+				<input type='button' id='btnDeepSee' value='Go to DeepSee™' style='width: 150px;'>
+				<br><br>
+				<input type='button' id='btnPcap' value='Download PCAP' style='width: 150px;'>
+			</div>
+		</div>
+	</div>
+
+	<div id='soleraAddIpBox' class='solera addmenu'>
+		<div style='padding: 10px;'>
+			<span class='hypertext addSource'>Add as source address</span>
+			<br><br>
+			<span class='hypertext addDest'>Add as destination address</span>
+		</div>
+	</div>
+	<div id='soleraAddTimeBox' class='solera addmenu'>
+		<div style='padding: 10px;'>
+			<span class='hypertext setStartTime'>Set as start time</span>
+			<br><br>
+			<span class='hypertext setStopTime'>Set as stop time</span>
+		</div>
+	</div>
+	<div id='soleraAddTimeAmBox' class='solera addmenu'>
+		<div style='padding: 10px;'>
+			<span class='hypertext setStartTime'>Set as start time</span>
+			<br><br>
+			<span class='hypertext setStopTime'>Set as stop time</span>
+		</div>
+	</div>
+	<div id='soleraAddDateBox' class='solera addmenu'>
+		<div style='padding: 10px;'>
+			<span class='hypertext setStartDate'>Set as start date</span>
+			<br><br>
+			<span class='hypertext setStopDate'>Set as stop date</span>
+		</div>
+	</div>
+	<div id='soleraAddDateTimeBox' class='solera addmenu'>
+		<div style='padding: 10px;'>
+			<span class='hypertext setStartDate'>Set as start date and time</span>
+			<br><br>
+			<span class='hypertext setStopDate'>Set as stop date and time</span>
+		</div>
+	</div>
+</div>

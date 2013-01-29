@@ -1,0 +1,299 @@
+/* reset css */
+.solera-bar div,
+.solera-bar span,
+.solera-bar h1,
+.solera-bar h2,
+.solera-bar h3,
+.solera-bar h4,
+.solera-bar h5,
+.solera-bar h6,
+.solera-bar p,
+.solera-bar a,
+.solera-bar img,
+.solera-bar ol,
+.solera-bar ul,
+.solera-bar li,
+.solera-bar form,
+.solera-bar table,
+.solera-bar tbody,
+.solera-bar tfoot,
+.solera-bar thead,
+.solera-bar tr,
+.solera-bar th,
+.solera-bar td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+.solera-bar table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+.solera-bar th,
+.solera-bar td {
+	text-align: left;
+	font-weight: normal;
+}
+.solera-bar table,
+.solera-bar td,
+.solera-bar th {
+	vertical-align: middle;
+}
+.solera-bar a img {
+	border: none;
+}
+
+.solera-bar .solera {
+	font-family: arial, sans-serif;
+	font-size: 8pt;
+}
+
+.solera-bar .positionable {
+	font-size: 10pt;
+	color: #fff;
+}
+
+.solera-bar .soleraTimeRange td {
+	border: 1px solid lightgray;
+	text-align: center;
+}
+
+.solera-bar .soleraTimeRange input {
+	border: medium none;
+	margin-right: 0px;
+	padding-right: 0px;
+	background-color: #393C3F;
+	color: #dadada;
+}
+
+.solera-bar .timespanDesc {
+	width: 25%;
+	color: #fff;
+}
+
+.solera-bar .emptyMesg {
+	color: #999;
+}
+
+.solera-bar #configDiag {
+	width: 400px;
+	height: 290px;
+	-moz-border-radius: 4px;
+}
+.solera-bar #configDiag .cancel {
+	cursor: pointer;
+}
+
+.solera-bar #configDiag div.container {
+	padding: 10px;
+	background-color: #fff;
+	border:1px solid #3B5998;
+	font-size: 8pt;
+	margin-bottom:-1px;
+}
+
+.solera-bar #configDiag div.footer {
+	padding: 10px;
+	margin-bottom:-1px;
+	color: #fff;
+	background-color: #688DB0;
+	border:1px solid #3B5998;
+	font-size: 8pt;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-radius-bottomleft: 4px;
+	-webkit-border-radius-bottomright: 4px;
+}
+
+.solera-bar .maskOverlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	opacity: 0.5;
+	z-index: 1001;
+	background-color: black;
+}
+
+.solera-bar .whiteOverlay {
+	display: none;
+	position: fixed;
+	top: 35%;
+	left: 35%;
+	width: 50%;
+	height: 50%;
+	background-color: #688DB0;
+	z-index: 1002;
+}
+
+.solera-bar #carbonRod {
+	height: 36px;
+	background: -moz-linear-gradient(center top , #393c3f, #555758) repeat scroll 0 0 transparent;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1000;
+	text-align: center;
+}
+
+.solera-bar #configDiag div.header {
+	padding: 10px;
+	margin-bottom:-1px;
+	color: #fff;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-radius-topleft: 4px;
+	-webkit-border-radius-topright: 4px;
+	background: #688DB0;
+	padding: 5px 10px;
+	border: 1px solid #3B5998;
+	font-size: 20px;
+}
+
+.solera-bar #soleraButton {
+	float: right;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.solera-bar #soleraButton img {
+	cursor: pointer;
+}
+
+/* menu */
+.solera-bar #solera-menu {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        color: #fff;
+        line-height: 36px;
+        display: inline-block;
+        z-index: 1000;
+	position: relative;
+}
+.solera-bar #solera-menu > div {
+	background: -moz-linear-gradient(center top , #393c3f, #555758) repeat scroll 0 0 transparent;
+        cursor: pointer;
+        float: left;
+        position: relative;
+        padding: 0px 50px;
+	border-left: 1px solid #555758;
+	border-right: 1px solid #393c3f;
+        height: 36px;
+}
+.solera-bar #solera-menu div.first-child,
+.solera-bar #solera-menu div:first-child {
+        border-left-style: none !important;
+}
+.solera-bar #solera-menu div.last-child,
+.solera-bar #solera-menu div:last-child {
+        border-right-style: none !important;
+}
+
+.solera-bar #solera-submenu div.submenu {
+	z-index: 1001;
+	min-height: 50px;
+	background-color: #393C3F;
+	padding: 10px;
+	border-top: 1px solid #393C3F;
+	border-left: 1px solid #393C3F;
+	border-right: 1px solid #393C3F;
+	border-bottom: 1px solid #555758;
+	min-width: 200px;
+	font-family: arial, sans-serif;
+	color: #fff;
+}
+
+.solera-bar #solera-menu > div.appIcon img {
+        margin-top: 8px;
+        float: left;
+}
+.solera-bar .heavyHypertext {
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.solera-bar .positionable {
+	top: -9999px;
+	left: -9999px;
+	position: absolute;
+}
+
+.solera-bar .tupleList {
+	width: 100%;
+}
+.solera-bar .tupleList td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+.solera-bar .tupleList td.content {
+	width: 90%;
+}
+.solera-bar .tupleList td.remove {
+	width: 10%;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.solera-bar .maximize {
+	position: fixed;
+	bottom: 26px;
+	right: 15px;
+	z-index: 1004;
+}
+
+.solera-bar .minimize {
+	position: fixed;
+	bottom: 1px;
+	right: 15px;
+	z-index: 1004;
+}
+#soleraRodPlaceholder {
+	height: 10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index:1003;
+	background-color: #393c3f;
+}
+.hypertext {
+	color: blue;
+	cursor: pointer;
+	text-decoration: none;
+}
+#soleraAddIpBox,
+#soleraAddTimeBox,
+#soleraAddTimeAmBox,
+#soleraAddDateTimeBox,
+#soleraAddDateBox {
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	min-height: 5px;
+	width: 150px;
+	top: 0;
+	left: 0;
+	z-index: 1005;
+}
+
+.soleraTimeAmBox,
+.soleraTimeBox,
+.soleraDateTimeBox,
+.soleraDateBox {
+	background-color: #fffff0 !important;
+	border : 1px solid #ccc;
+}
+
+.soleraIpBox {
+	background-color: #f5f5f5 !important;
+	border : 1px solid #ccc;
+}
